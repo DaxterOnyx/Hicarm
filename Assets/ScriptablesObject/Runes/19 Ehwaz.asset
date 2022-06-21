@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2a1691cd93d7524e9dc3c891b3fa751, type: 3}
+  m_Name: 19 Ehwaz
+  m_EditorClassIdentifier: 
+  Number: 19
+  Name: Ehwaz
+  Symbol: Aube
+  Concept: "D\xE9but"
+  Rune: {fileID: 2800000, guid: 064b41693ee4b5441a2a17434500183e, type: 3}
+  Son: E
+  ColorName: Blanc
+  Element:
+    Change: 1
+    Structure: 1
+    Aspect: 1
+  Quality: 
+  Default: 
+  Biome: 
+  Place: 
+  Object: 
+  God: 
+  Plant: 
+  Equipement: 
+  Accesory: 
+  Weapon: 
+  Precious: 
+  Instrument: 
+  Technik: 
+  Species: 
+  Role: 

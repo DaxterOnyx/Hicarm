@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0adbc3d3d18f4c479d3a340964d0fc43, type: 3}
+  m_Name: "Mauvaise herbe enchev\xEAtr\xE9e"
+  m_EditorClassIdentifier: 
+  magic:
+    Sens: -0.7
+    Fond: 0.7
+    Forme: 0
+  price: 34
+  tag: 0
+  image: {fileID: 2800000, guid: cad225ca83913fb499f1d4930b6d673c, type: 3}
+  descritpion: "Mouill\xE9 et glissant."
