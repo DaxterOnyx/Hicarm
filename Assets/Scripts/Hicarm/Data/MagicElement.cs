@@ -1,12 +1,9 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Hicarm
+namespace Hicarm.Data
 {
-    [CreateAssetMenu(menuName = "MagicElement", fileName = "MagicElement")]
+    [CreateAssetMenu(menuName = "MagicElement", fileName = "Data/MagicElement")]
     public class MagicElement : ScriptableObject
     {
         public Magic magic;

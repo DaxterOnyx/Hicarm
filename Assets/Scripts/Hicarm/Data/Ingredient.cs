@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-namespace Hicarm
+namespace Hicarm.Data
 {
-    [CreateAssetMenu(fileName = "Ingredient", menuName = "Ingredient", order = 0)]
+    [CreateAssetMenu(fileName = "Ingredient", menuName = "Data/Ingredient", order = 0)]
     public class Ingredient : ScriptableObject
     {
         [SerializeField]

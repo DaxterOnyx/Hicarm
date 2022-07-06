@@ -1,39 +1,39 @@
-﻿using System;
+﻿using Hicarm.Data;
 using Sirenix.OdinInspector;
-using Sirenix.Utilities;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Hicarm
 {
     [System.Serializable]
     public struct Magic
     {
-        [Tooltip("- Répulsion Désordre\n+ Attraction Ordre")] [SerializeField]
-        public float Sens;
+        [FormerlySerializedAs("Sens"),Tooltip("- Répulsion Désordre\n+ Attraction Ordre")] [SerializeField]
+        public float sens;
 
-        public float SensPower => Mathf.Abs(Sens);
+        public float SensPower => Mathf.Abs(sens);
 
-        [Tooltip("- Masse Matière\n+ Mouvement Esprit")] [SerializeField]
-        public float Fond;
+        [FormerlySerializedAs("Fond"),Tooltip("- Masse Matière\n+ Mouvement Esprit")] [SerializeField]
+        public float fond;
 
-        public float FondPower => Mathf.Abs(Fond);
+        public float FondPower => Mathf.Abs(fond);
 
-        [SerializeField] [Tooltip("- Intra Âme\n+ Extra Vie")]
-        public float Forme;
+        [FormerlySerializedAs("Forme"),SerializeField] [Tooltip("- Intra Âme\n+ Extra Vie")]
+        public float forme;
 
-        [HorizontalGroup] public float FormePower => Mathf.Abs(Forme);
+        [HorizontalGroup] public float FormePower => Mathf.Abs(forme);
 
         public Magic(float sens = 0, float fond = 0, float forme = 0) : this()
         {
-            Sens = sens;
-            Fond = fond;
-            Forme = forme;
+            this.sens = sens;
+            this.fond = fond;
+            this.forme = forme;
             CalculatePurity();
         }
 
         public float Power => SensPower + FondPower + FormePower;
 
-        internal Vector3 ToVector3 => new Vector3(Sens, Fond, Forme);
+        internal Vector3 ToVector3 => new Vector3(sens, fond, forme);
 
         [ShowInInspector] public MagicElement Element { get; private set; }
 
@@ -63,12 +63,12 @@ namespace Hicarm
 
         public static Magic operator +(Magic a, Magic b)
         {
-            return new Magic(a.Sens + b.Sens, a.Fond + b.Fond, a.Forme + b.Forme);
+            return new Magic(a.sens + b.sens, a.fond + b.fond, a.forme + b.forme);
         }
 
         public static Magic operator *(float a, Magic b)
         {
-            return new Magic(a * b.Sens, a * b.Fond, a * b.Forme);
+            return new Magic(a * b.sens, a * b.fond, a * b.forme);
         }
 
         public static float Dist(Magic a, Magic b)

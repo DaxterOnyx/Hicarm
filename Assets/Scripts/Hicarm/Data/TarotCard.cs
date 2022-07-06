@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Hicarm
 {
-    [CreateAssetMenu(menuName = "Tarot", fileName = "Tarot")]
+    [CreateAssetMenu(menuName = "Tarot", fileName = "Data/Tarot")]
     public class TarotCard : ScriptableObject
     {
         public int Number;
@@ -16,7 +16,7 @@ namespace Hicarm
 
         [ShowInInspector]
         public Color Color =>
-            new Color((Element.Sens + 1) / 2f, (Element.Forme + 1) / 2f, (Element.Fond + 1) / 2f);
+            new Color((Element.sens + 1) / 2f, (Element.forme + 1) / 2f, (Element.fond + 1) / 2f);
 
         public Magic Element;
         public string Quality;

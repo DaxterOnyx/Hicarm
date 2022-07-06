@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using Hicarm.Data;
+using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
@@ -78,13 +79,13 @@ namespace Hicarm
         {
             switch (Ignored)
             {
-                case Axis.Fond when magic.Fond != 0:
-                case Axis.Sens when magic.Sens != 0:
-                case Axis.Forme when magic.Forme != 0:
-                case Axis.Complex when (magic.Forme == 0 || magic.Sens == 0 ||
-                                        magic.Fond == 0):
-                case Axis.Void when magic.Forme != 0 || magic.Sens != 0 ||
-                                    magic.Fond != 0 || name.StartsWith("#"):
+                case Axis.Fond when magic.fond != 0:
+                case Axis.Sens when magic.sens != 0:
+                case Axis.Forme when magic.forme != 0:
+                case Axis.Complex when (magic.forme == 0 || magic.sens == 0 ||
+                                        magic.fond == 0):
+                case Axis.Void when magic.forme != 0 || magic.sens != 0 ||
+                                    magic.fond != 0 || name.StartsWith("#"):
                     return;
             }
 
