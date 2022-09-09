@@ -12,29 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a1691cd93d7524e9dc3c891b3fa751, type: 3}
   m_Name: 16 Sowilo
   m_EditorClassIdentifier: 
-  Number: 16
-  Name: Sowilo
-  Symbol: Rayon de soleil
-  Concept: Pouvoir
-  Rune: {fileID: 2800000, guid: a5c59be6555080640b2afc1e8cec1642, type: 3}
-  Son: S
-  ColorName: Chartreuse
-  Element:
-    Change: 0
-    Structure: -1
-    Aspect: 1
-  Quality: 
-  Default: 
-  Biome: 
-  Place: 
-  Object: 
-  God: 
-  Plant: 
-  Equipement: 
-  Accesory: 
-  Weapon: 
-  Precious: 
-  Instrument: 
-  Technik: 
-  Species: 
-  Role: 
+  number: 16
+  symbol: Rayon de soleil
+  concept: Pouvoir
+  rune: {fileID: 2800000, guid: a5c59be6555080640b2afc1e8cec1642, type: 3}
+  son: S
+  colorName: Chartreuse
+  element:
+    sens: 0
+    fond: -1
+    forme: 1
+  quality: 
+  default: 
+  biome: 
+  place: 
+  object: 
+  god: 
+  plant: 
+  equipement: 
+  accesory: 
+  weapon: 
+  precious: 
+  instrument: 
+  technik: 
+  species: 
+  role: 

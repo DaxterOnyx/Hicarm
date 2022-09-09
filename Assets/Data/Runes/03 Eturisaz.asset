@@ -12,29 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a1691cd93d7524e9dc3c891b3fa751, type: 3}
   m_Name: 03 Eturisaz
   m_EditorClassIdentifier: 
-  Number: 3
-  Name: Eturisaz
-  Symbol: "\xC9pine"
-  Concept: "D\xE9fense"
-  Rune: {fileID: 2800000, guid: dc479970b7922104a908a422aa681c8c, type: 3}
-  Son: ET
-  ColorName: Olive
-  Element:
-    Change: 0
-    Structure: -1
-    Aspect: 0
-  Quality: 
-  Default: 
-  Biome: 
-  Place: 
-  Object: 
-  God: 
-  Plant: 
-  Equipement: 
-  Accesory: 
-  Weapon: 
-  Precious: 
-  Instrument: 
-  Technik: 
-  Species: 
-  Role: 
+  number: 3
+  symbol: "\xC9pine"
+  concept: "D\xE9fense"
+  rune: {fileID: 2800000, guid: dc479970b7922104a908a422aa681c8c, type: 3}
+  son: ET
+  colorName: Olive
+  element:
+    sens: 0
+    fond: -1
+    forme: 0
+  quality: 
+  default: 
+  biome: 
+  place: 
+  object: 
+  god: 
+  plant: 
+  equipement: 
+  accesory: 
+  weapon: 
+  precious: 
+  instrument: 
+  technik: 
+  species: 
+  role: 

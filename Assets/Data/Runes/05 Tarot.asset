@@ -12,29 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a1691cd93d7524e9dc3c891b3fa751, type: 3}
   m_Name: 05 Tarot
   m_EditorClassIdentifier: 
-  Number: 5
-  Name: Raido
-  Symbol: Chariot
-  Concept: Voyage
-  Rune: {fileID: 2800000, guid: dca97734761d3e84d98c80afe4544840, type: 3}
-  Son: R
-  ColorName: Pistache
-  Element:
-    Change: 0
-    Structure: 0
-    Aspect: 1
-  Quality: 
-  Default: 
-  Biome: 
-  Place: 
-  Object: 
-  God: 
-  Plant: 
-  Equipement: 
-  Accesory: 
-  Weapon: 
-  Precious: 
-  Instrument: 
-  Technik: 
-  Species: 
-  Role: 
+  number: 5
+  symbol: Chariot
+  concept: Voyage
+  rune: {fileID: 2800000, guid: dca97734761d3e84d98c80afe4544840, type: 3}
+  son: R
+  colorName: Pistache
+  element:
+    sens: 0
+    fond: 0
+    forme: 1
+  quality: 
+  default: 
+  biome: 
+  place: 
+  object: 
+  god: 
+  plant: 
+  equipement: 
+  accesory: 
+  weapon: 
+  precious: 
+  instrument: 
+  technik: 
+  species: 
+  role: 

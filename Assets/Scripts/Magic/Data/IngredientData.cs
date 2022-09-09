@@ -4,13 +4,13 @@ using UnityEngine;
 namespace Hicarm.Data
 {
     [CreateAssetMenu(fileName = "Ingredient", menuName = "Data/Ingredient", order = 0)]
-    public class Ingredient : ScriptableObject
+    public class IngredientData : ScriptableObject
     {
         [SerializeField]
-        public static List<Ingredient> List;
+        public static List<IngredientData> List;
         
         [SerializeField]
-        public Magic magic;
+        public Magic.Magic magic;
         public float price;
         public Tag tag;
         public Texture image;
@@ -29,7 +29,7 @@ namespace Hicarm.Data
         private void OnValidate()
         {
             if (List == null)
-                List = new List<Ingredient>();
+                List = new List<IngredientData>();
             
             if(!List.Contains(this))
                 List.Add(this);

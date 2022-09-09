@@ -12,29 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a1691cd93d7524e9dc3c891b3fa751, type: 3}
   m_Name: 02 Ouruz
   m_EditorClassIdentifier: 
-  Number: 2
-  Name: Ouruz
-  Symbol: Taureau sauvage
-  Concept: Force
-  Rune: {fileID: 2800000, guid: f04fe671470528341a4ed9a0587bc81d, type: 3}
-  Son: OU
-  ColorName: Rose
-  Element:
-    Change: 1
-    Structure: 0
-    Aspect: 0
-  Quality: 
-  Default: 
-  Biome: 
-  Place: 
-  Object: 
-  God: 
-  Plant: 
-  Equipement: 
-  Accesory: 
-  Weapon: 
-  Precious: 
-  Instrument: 
-  Technik: 
-  Species: 
-  Role: 
+  number: 2
+  symbol: Taureau sauvage
+  concept: Force
+  rune: {fileID: 2800000, guid: f04fe671470528341a4ed9a0587bc81d, type: 3}
+  son: OU
+  colorName: Rose
+  element:
+    sens: 1
+    fond: 0
+    forme: 0
+  quality: 
+  default: 
+  biome: 
+  place: 
+  object: 
+  god: 
+  plant: 
+  equipement: 
+  accesory: 
+  weapon: 
+  precious: 
+  instrument: 
+  technik: 
+  species: 
+  role: 

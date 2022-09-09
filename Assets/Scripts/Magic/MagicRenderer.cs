@@ -1,9 +1,10 @@
-﻿using Hicarm.Data;
+﻿using Hicarm;
+using Hicarm.Data;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
-namespace Hicarm
+namespace Magic
 {
     [ExecuteInEditMode]
     public class MagicRenderer : MonoBehaviour
@@ -18,6 +19,7 @@ namespace Hicarm
             All,
             Ingredient,
             Element,
+            Rune,
         }
 
         public enum Axis
@@ -44,7 +46,7 @@ namespace Hicarm
                         element = MagicElement.Elements[i];
                     }
 
-                    if (Rendered == Type.All || Rendered == Type.Element)
+                    if (Rendered is Type.All or Type.Element)
                     {
                         DisplayMagic(element.name, element.magic, null);
                     }
@@ -55,27 +57,46 @@ namespace Hicarm
                 }
             }
 
-            if (Rendered == Type.All || Rendered == Type.Ingredient)
+            if (Rendered is Type.All or Type.Ingredient)
             {
-                if (Ingredient.List != null)
+                if (IngredientData.List != null)
                 {
-                    var ingredients = Ingredient.List;
+                    var ingredients = IngredientData.List;
                     for (var i = 0; i < ingredients.Count; i++)
                     {
-                        Ingredient ingredient = ingredients[i];
-                        while (ingredient == null)
+                        IngredientData ingredientData = ingredients[i];
+                        while (ingredientData == null)
                         {
                             ingredients.RemoveAt(i);
-                            ingredient = ingredients[i];
+                            ingredientData = ingredients[i];
                         }
 
-                        DisplayMagic(ingredient.name, ingredient.magic, ingredient.image);
+                        DisplayMagic(ingredientData.name, ingredientData.magic, ingredientData.image);
+                    }
+                }
+            }
+            
+            if (Rendered is Type.All or Type.Rune)
+            {
+                if (TarotCard.List != null)
+                {
+                    var cards = TarotCard.List;
+                    for (var i = 0; i < cards.Count; i++)
+                    {
+                        var card = cards[i];
+                        while (card == null)
+                        {
+                            cards.RemoveAt(i);
+                            card = cards[i];
+                        }
+
+                        DisplayMagic(card.name, card.element, card.rune);
                     }
                 }
             }
         }
 
-        private void DisplayMagic(string name, Magic magic, Texture image)
+        private void DisplayMagic(string name, global::Magic.Magic magic, Texture image)
         {
             switch (Ignored)
             {

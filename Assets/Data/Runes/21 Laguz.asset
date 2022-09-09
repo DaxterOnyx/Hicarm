@@ -12,29 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2a1691cd93d7524e9dc3c891b3fa751, type: 3}
   m_Name: 21 Laguz
   m_EditorClassIdentifier: 
-  Number: 21
-  Name: Laguz
-  Symbol: Bateau
-  Concept: "\xC9motion"
-  Rune: {fileID: 2800000, guid: a1e39ef138fd1274382693b42ee8c72c, type: 3}
-  Son: L
-  ColorName: Magenta
-  Element:
-    Change: 1
-    Structure: 1
-    Aspect: -1
-  Quality: 
-  Default: 
-  Biome: 
-  Place: 
-  Object: 
-  God: 
-  Plant: 
-  Equipement: 
-  Accesory: 
-  Weapon: 
-  Precious: 
-  Instrument: 
-  Technik: 
-  Species: 
-  Role: 
+  number: 21
+  symbol: Bateau
+  concept: "\xC9motion"
+  rune: {fileID: 2800000, guid: a1e39ef138fd1274382693b42ee8c72c, type: 3}
+  son: L
+  colorName: Magenta
+  element:
+    sens: 1
+    fond: 1
+    forme: -1
+  quality: 
+  default: 
+  biome: 
+  place: 
+  object: 
+  god: 
+  plant: 
+  equipement: 
+  accesory: 
+  weapon: 
+  precious: 
+  instrument: 
+  technik: 
+  species: 
+  role: 

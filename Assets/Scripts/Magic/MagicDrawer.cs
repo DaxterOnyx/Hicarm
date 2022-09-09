@@ -3,7 +3,7 @@ using Sirenix.OdinInspector.Editor;
 using Sirenix.Utilities.Editor;
 using UnityEngine;
 
-namespace Hicarm
+namespace Magic
 {
     public class MagicDrawer : OdinValueDrawer<Magic>
     {

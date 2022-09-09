@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: '#Intra Ame'
   m_EditorClassIdentifier: 
   magic:
-    Sens: 0
-    Fond: 0
-    Forme: -2
+    sens: 0
+    fond: 0
+    forme: 0

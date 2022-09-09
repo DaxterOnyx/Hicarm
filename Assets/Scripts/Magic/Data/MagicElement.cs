@@ -6,7 +6,7 @@ namespace Hicarm.Data
     [CreateAssetMenu(menuName = "MagicElement", fileName = "Data/MagicElement")]
     public class MagicElement : ScriptableObject
     {
-        public Magic magic;
+        public Magic.Magic magic;
 
         [SerializeField]
         internal static List<MagicElement> Elements;
